@@ -1,0 +1,83 @@
+/* --------------------------------------------------------------
+Color #9    (#827055)
+-------------------------------------------------------------- */
+body::-webkit-scrollbar-thumb ,
+nav.mainNavbar .navigation-container .brand,
+nav.mainNavbar button.toggleMenu,
+section h2::before,
+a.btn-uniqu::before,
+.resume .timeline::before,
+.resume .timeline::after,
+.resume .timeline .block::before,
+.resume .timeline .circle,
+.services .services-box:hover .flex-item:first-child,
+.features .feature-item,
+.portfolio .gallery nav.gallery-nav button::before,
+.portfolio .gallery::before,
+.slick-prev, .slick-next,
+.pricing .pricingTable .price-value,
+.pricing a.btn-uniqu::before,
+.interest .interest-box .item,
+.blog .read-more,
+.ph-photo-container:hover,
+.contact .contact-details ul.social,
+.single-blog .contactForm button,
+.sidebar .widget-tag .tag:hover
+{
+	background: #827055
+}
+nav.mainNavbar .navigation-container .navMenu li a:hover,
+.mainHeader h1,
+.mainHeader h1 i,
+.skills .row .skill:hover span,
+.features .feature-item:hover,
+.portfolio .gallery nav.gallery-nav button:hover, 
+.portfolio .gallery nav.gallery-nav button:focus, 
+.portfolio .gallery nav.gallery-nav button.active,
+.testimonials .testimonial .title,
+.blog .blog-content ul,
+.blog .blog-box a:hover,
+.contact .contact-details a.personal-email,
+.single-blog .share-block .share-btn:hover,
+.single-blog .comment-title,
+.single-blog .leave-comment h3,
+.sidebar .widget-title,
+.sidebar .post-title:hover,
+.sidebar .post-social,
+.sidebar .widget-categoeies .cat-title:hover,
+.sidebar .widget-categoeies .cat-title i
+{
+    color: #827055;
+}
+
+.testimonials .testimonial .pic,
+.testimonials .testimonial p,
+.single-blog .contactForm button:hover,
+.single-blog .contactForm input:focus, 
+.single-blog .contactForm textarea:focus,
+.searchform input[type=search],
+.sidebar .widget-tag .tag
+{
+	border: 1px solid #827055;
+}
+.testimonials .testimonial p:before{
+	border-left: 1px solid #827055
+}
+.theme-option .open-theme,
+.theme-option .colors-theme{
+	border: 2px solid #827055;
+}
+/*----------------------------------------
+Blog Single Page 
+----------------------------------------*/
+.single-blog blockquote {
+    border-left: 6px solid #827055;
+}
+/*** Share on socials ***/
+.single-blog .share-block {
+    border-top: 1px solid #827055;
+    border-bottom: 1px solid #827055;
+}
+.single-blog .reply-btn {
+   color: #827055 !important
+}

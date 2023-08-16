@@ -1,2 +1,2 @@
 # TylerOlli.io
-Personal Website - https://tylerolli.io/
+My personal website

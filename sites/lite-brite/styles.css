@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    background-color: purple;
+}
+
+h1 {
+    font-family: Monoton;
+    font-size: 70px;
+    margin: 0.2em;
+    color: white;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+    color: white;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+h4 {
+    color: white;
+}
+
+form {
+   color: white; 
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: black;
+    outline-style: none;
+    outline-color: purple;
+    outline-width: thick;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 6em;
+}
+
+#logo {
+    text-align: center;
+    width: 600px;
+}
+
+#designCanvas {
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.container {
+    background-color: black;
+    padding-bottom: 10px;
+    height: 100vh;
+    overflow: auto;
+    overflow-x:hidden;
+}
+
+.top {
+    margin: 10px;
+}
+
+#inputHeight {
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+text-align: center;
+}
+
+#inputWeight {
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+text-align: center;
+}
+
+td {
+    background-clip: padding-box; /* this has been added */
+    border-radius: 50%;
+}
+
+#giphy {
+    margin-bottom: 10px;
+}
