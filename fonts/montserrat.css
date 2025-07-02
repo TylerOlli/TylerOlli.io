@@ -1,0 +1,9 @@
+/* Montserrat Font - Self Hosted */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('montserrat-medium.woff2') format('woff2'),
+       url('montserrat-medium.woff') format('woff');
+} 
