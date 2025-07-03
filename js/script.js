@@ -14,14 +14,31 @@ $(document).ready(function () {
         filterButton        = $(".filter-button"),
         filteredItem        = $('.filter'),
         testimonialSlider   = $("#testimonial-slider"),
-        revealed            = $('.wow');
+        revealed            = $('.wow'),
+        triangleIframe      = $('.triangle-container iframe'),
+        triangleLoading     = $('.triangle-loading');
 
-    // removing preloader after load complete
-    $(window).on('load', function () {
-        $('.preloader').fadeOut(200, function () { $(this).remove(); });
-    });
-
+    // Handle triangle header iframe loading
+    function initTriangleHeader() {
+        // Fallback if iframe fails to load after 3 seconds
+        setTimeout(function() {
+            if (triangleIframe.css('opacity') === '0') {
+                triangleIframe.css('opacity', '1');
+                triangleLoading.hide();
+            }
+        }, 3000);
+    }
     
+    // Initialize triangle header
+    initTriangleHeader();
+
+    // Fade in menu button after page loads (mobile only)
+    if (window.innerWidth <= 768) {
+        setTimeout(function() {
+            toggleMenuButton.css('opacity', '1');
+        }, 300);
+    }
+
     //Show Color Switcher When Click the Gear Button
     $('.theme-option .open-theme').on('click', function(){
         $('.theme-option .colors-theme').toggle();
@@ -133,6 +150,13 @@ $(document).ready(function () {
     // positioning the scroll to top button and menu button properly
     $(window).on('resize', function () {
         toggleMenuButton.add(scrollTopButton).css('left', ($(window).outerWidth() - logo.offset().left - 60) + 'px');
+        
+        // Show/hide menu button based on screen size
+        if (window.innerWidth <= 768) {
+            toggleMenuButton.show().css('opacity', '1');
+        } else {
+            toggleMenuButton.hide().css('opacity', '0');
+        }
     });
     toggleMenuButton.add(scrollTopButton).css('left', ($(window).outerWidth() - logo.offset().left - 60) + 'px');
 

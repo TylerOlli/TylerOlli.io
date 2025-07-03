@@ -44,12 +44,13 @@
          <div class="page-holder">
          
          <!-- Triangle Animation Header -->
-         <div class="triangle-container" style="height: 100vh; position: relative; overflow: hidden;">
+         <div class="triangle-container" style="height: 100vh; position: relative; overflow: hidden; background: #2e2e34;">
             <iframe 
                src="Triangles-Header/index.html" 
-               style="width: 100%; height: 100vh; border: none; display: block; position: absolute; top: 0; left: 0;"
+               style="width: 100%; height: 100vh; border: none; display: block; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.4s ease-in; background: #2e2e34;"
                loading="eager"
-               title="Triangle Animation Header">
+               title="Triangle Animation Header"
+               onload="setTimeout(function(){this.style.opacity='1';}.bind(this), 50);">
             </iframe>
          </div>
          
@@ -78,7 +79,7 @@
                </div>
 
                <!-- Toggle Button -->
-               <button id="toggleMenu" class="toggleMenu clearfix">
+               <button id="toggleMenu" class="toggleMenu clearfix" style="opacity: 0; transition: opacity 0.6s ease-in; display: none;">
                   <span></span><span></span><span></span>
                </button>
          </nav>
@@ -758,17 +759,7 @@
             <span class="fa fa-long-arrow-up"></span> UP
          </div>
 
-         <!-- Preloader -->
-         <div class="preloader">
-            <div class="content text-center">
-               <strong>Tyler Olli</strong>
-               <span>Full Stack</span><br>
-               <span>Software Engineer</span>
-               <div class="preloader-progress" style="margin-left:40px;">
-                  <div class="preloader-progress-bar"></div>
-               </div>
-            </div>
-         </div><!-- end Preloader -->
+
 
       </div>
    <!-- End Page Holder -->

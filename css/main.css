@@ -67,7 +67,6 @@ nav.mainNavbar .navigation-container .brand,
 .contact,
 .contactForm button,
 .contact .contact-details ul.social a:hover,
-.preloader,
 #scrollTop.darken
 {
    color: #fff
@@ -86,7 +85,6 @@ nav.mainNavbar button.toggleMenu span,
 .blog .blog-box,
 .contact h2::after,
 .contactForm button::before,
-.preloader .preloader-progress .preloader-progress-bar,
 #scrollTop
 {
    background: #fff
@@ -114,7 +112,6 @@ nav.mainNavbar .navigation-container .navMenu li a,
 .pricing a.btn-uniqu,
 .pricing .pricingTable:hover .price-value,
 .contact,
-.preloader,
 #scrollTop.darken
 {
    background: #2e2e34;
@@ -127,8 +124,7 @@ nav.mainNavbar,
 nav.mainNavbar .navigation-container,
 .mainHeader,
 .portfolio .gallery .mix .item .info,
-nav.mainNavbar .navigation-container .brand,
-.preloader {
+nav.mainNavbar .navigation-container .brand {
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -1405,69 +1401,7 @@ Color Switcher
 
 /*End Color Switcher ---------------------------------------------------*/
 
-/* --------------------------------------------------------------
-Preloader
--------------------------------------------------------------- */
-.preloader {
-   width: 100vw;
-   height: 100vh;
-   position: fixed;
-   top: 0;
-   left: 0;
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
-        justify-content: center;
-   z-index: 9999
-}
 
-/*text */
-.preloader strong {
-   font-size: 40px;
-   font-weight: 900;
-   text-transform: uppercase;
-   line-height: 1;
-   display: block;
-}
-.preloader span {
-   letter-spacing: 2px;
-}
-
-/*progress container */
-.preloader .preloader-progress {
-   margin-top: 20px;
-   width: 140px;
-   height: 3px;
-   background: #161619;
-   border-radius: 10px
-}
-
-/*progress bar */
-.preloader .preloader-progress .preloader-progress-bar {
-   height: 100%;
-   border-radius: 10px;
-   -webkit-animation: loading 4s infinite linear;
-      animation: loading 4s infinite linear;
-}
-
-@-webkit-keyframes loading {
-   0% {
-      width: 0;
-   }
-   100% {
-      width: 140px;
-   }
-}
-
-@keyframes loading {
-   0% {
-      width: 0;
-   }
-
-   100% {
-      width: 140px;
-   }
-}
-/*End Preloader ---------------------------------------------------*/
 
 
 
@@ -1566,6 +1500,13 @@ Navbar
    }
    nav.mainNavbar .navigation-container .navMenu {
       width: 100%;
+   }
+}
+
+/* Show menu button only on mobile */
+@media (max-width: 768px) {
+   nav.mainNavbar button.toggleMenu {
+      display: block !important;
    }
 }
 
